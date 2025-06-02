@@ -16,11 +16,11 @@ resb 16384
 stack_top:
 
 section .text
-extern main
+extern kmain
 global _start:function (_start.end - _start)
 _start:
             mov esp, stack_top
-            call main
+            call kmain
             cli
 .hang:      hlt
             jmp .hang
