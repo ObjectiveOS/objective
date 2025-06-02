@@ -27,12 +27,14 @@ These variables may pass through *make* command `make *variables* *rule*`, or us
 
 Build and run release version
 ```sh
-make all
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchain.cmake ..
+make run
 ```
 
 Build and run debug version
 ```sh
-make DEBUG=* all
+make debug
+make gdb
 ```
 or
 ```sh
