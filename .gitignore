@@ -7,4 +7,3 @@ iso/os/*
 # LSP configuration files
 .clangd
 compile_flags.txt
-CMakeLists.txt.user
